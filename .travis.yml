@@ -9,5 +9,3 @@ after_success:
 - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 - docker build -t maxdemarzi/neo_travis:latest .
 - docker push maxdemarzi/neo_travis:latest
-deploy:
-	skip_cleanup: true
