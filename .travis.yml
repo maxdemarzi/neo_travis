@@ -8,5 +8,5 @@ after_success:
 - mvn clean cobertura:cobertura coveralls:report
 - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 - docker build -t maxdemarzi/neo_travis .
-- docker push maxdemarzi/neo_travis
+- docker push maxdemarzi/neo_travis:latest
 
