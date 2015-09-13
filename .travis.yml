@@ -7,6 +7,7 @@ services:
 after_success:
 - mvn cobertura:cobertura coveralls:report
 - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-- docker build -t maxdemarzi/neo_travis .
+- docker build -t maxdemarzi/neo_travis:latest .
 - docker push maxdemarzi/neo_travis:latest
-
+deploy:
+	skip_cleanup: true
