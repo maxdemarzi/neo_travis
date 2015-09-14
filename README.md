@@ -31,3 +31,5 @@ Example Neo4j Extension Testing using Travis-CI
 6. Try it:
         
         :GET /v1/service/friends/u1
+
+7. Test it.
