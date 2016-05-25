@@ -1,4 +1,4 @@
-FROM neo4j/neo4j:2.2.5
+FROM neo4j/neo4j:3.0
 MAINTAINER Max De Marzi<max@neo4j.com>
 
 COPY $ROOT/target/travis-1.0.jar /var/lib/neo4j/plugins/
